@@ -51,19 +51,6 @@ public class MainActivity  extends AppCompatActivity {
                 }
                 if(position == 2){
                     Intent intent = new Intent(MainActivity.this, SubMenu.class);
-//                    ArrayList<SubMenuItem> menuItems = new ArrayList<SubMenuItem>();
-//                    SubMenuItem menuItem1 = new SubMenuItem();
-//                    menuItem1.setId("1");
-//                    menuItem1.setTitle("Teenagers");
-//                    menuItem1.setDesc("asdgasdg");
-//
-//                    SubMenuItem menuItem2 = new SubMenuItem();
-//                    menuItem2.setId("1");
-//                    menuItem2.setTitle("Teenagers");
-//                    menuItem2.setDesc("asdgasdg");
-//
-//                    menuItems.add(menuItem1);
-//                    menuItems.add(menuItem2);
 
                     String[] ids = new String[]{"1","2"};
                     String[] titles = new String[]{"Teenagers","Biblical Examples"};

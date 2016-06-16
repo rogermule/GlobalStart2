@@ -1,10 +1,11 @@
 package com.gcme.globalstart;
 
-        import android.content.Context;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+        import android.support.v7.widget.Toolbar;
+        import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,7 +28,8 @@ public class SubMenu extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.submenu);
-
+        Toolbar toolbar = (Toolbar) findViewById(R.id.submenutoolbar);
+        setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         listView = (ListView) findViewById(R.id.listview);
@@ -49,13 +51,6 @@ public class SubMenu extends AppCompatActivity {
         MyAdapter myAdapter = new MyAdapter(this,menuItems);
 
         listView.setAdapter(myAdapter);
-
- /*       ArrayList<SubMenu>
-        for(int i =0; i<menu_array.size();i++){
-
-
-        }*/
-
 
     }
 
@@ -121,6 +116,5 @@ public class SubMenu extends AppCompatActivity {
             }
             return convertView;
         }
-
     }
 }
