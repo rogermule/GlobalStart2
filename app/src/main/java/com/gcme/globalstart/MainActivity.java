@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.gcme.globalstart.Do.SubMenu_Do;
 import com.gcme.globalstart.Goal.SubMenu_Goal;
@@ -22,6 +24,12 @@ public class MainActivity  extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        /** Making this activity, full screen */
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_main);
 
         mGridMenuFragment = GridMenuFragment.newInstance(R.drawable.global_start);
@@ -134,8 +142,6 @@ public class MainActivity  extends AppCompatActivity {
         menus.add(new GridMenu("Learn", R.drawable.groups));
         menus.add(new GridMenu("Do", R.drawable.lists));
         menus.add(new GridMenu("Goal", R.drawable.profile));
-        menus.add(new GridMenu("Timeline", R.drawable.timeline));
-        menus.add(new GridMenu("Testimony", R.drawable.settings));
 
         mGridMenuFragment.setupMenu(menus);
     }
