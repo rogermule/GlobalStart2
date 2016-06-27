@@ -14,6 +14,7 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.gcme.globalstart.Director;
 import com.gcme.globalstart.Model.SubMenuItem;
 import com.gcme.globalstart.R;
 
@@ -41,7 +42,7 @@ public class SubMenu_Goal extends AppCompatActivity {
 //        String[] title = getIntent().getExtras().getStringArray("titles");
 //        String[] desc = getIntent().getExtras().getStringArray("descs");
 
-        String[] id = new String[]{"1","2","3","4","5","6"};
+        String[] id = new String[]{"0","1","2","3","4","5"};
         String[] title = new String[]{"Know the Goal","Win","Sowing & Evangelism","Build","Send","Send Movements"};
         String[] desc = new String[]{"goal","win","sow","build","send","movements"};
 
@@ -96,7 +97,7 @@ public class SubMenu_Goal extends AppCompatActivity {
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(final int position, View convertView, ViewGroup parent) {
             LayoutInflater inflate = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             convertView = inflate.inflate(R.layout.single_layout, null);
@@ -113,7 +114,7 @@ public class SubMenu_Goal extends AppCompatActivity {
                 convertView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(context, Details_Goal.class);
+                        Intent intent = Director.getGoal(context,Integer.parseInt(menus.get(position).getId()));
                         context.startActivity(intent);
                     }
                 });

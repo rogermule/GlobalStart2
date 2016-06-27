@@ -11,6 +11,8 @@ import com.gcme.globalstart.Do.SubMenu_Do;
 import com.gcme.globalstart.Goal.SubMenu_Goal;
 import com.gcme.globalstart.GodHeart.SubMenu_GodHeart;
 import com.gcme.globalstart.Learn.SubMenu_Learn;
+import com.gcme.globalstart.Menu_Options.ContactUsOptions;
+import com.gcme.globalstart.Menu_Options.MoreOptions;
 import com.goka.blurredgridmenu.GridMenu;
 import com.goka.blurredgridmenu.GridMenuFragment;
 
@@ -67,7 +69,7 @@ public class MainActivity  extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this,Intro.class);
             startActivity(intent);
         }
-        if(position == 2){
+        else if(position == 2){
             Intent intent = new Intent(MainActivity.this, SubMenu_GodHeart.class);
 
 //            String[] ids = new String[]{"1","2","3"};
@@ -83,7 +85,7 @@ public class MainActivity  extends AppCompatActivity {
 
             startActivity(intent);
         }
-        if(position == 3){
+        else if(position == 3){
             Intent intent = new Intent(MainActivity.this, SubMenu_Learn.class);
 
 //            String[] ids = new String[]{"1","2","3","4"};
@@ -99,7 +101,7 @@ public class MainActivity  extends AppCompatActivity {
 
             startActivity(intent);
         }
-        if(position == 4){
+        else if(position == 4){
             Intent intent = new Intent(MainActivity.this, SubMenu_Do.class);
 
 //            String[] ids = new String[]{"1","2","3"};
@@ -116,7 +118,7 @@ public class MainActivity  extends AppCompatActivity {
             startActivity(intent);
         }
 
-        if(position == 5){
+        else if(position == 5){
             Intent intent = new Intent(MainActivity.this, SubMenu_Goal.class);
 
 //            String[] ids = new String[]{"1","2","3","4","5","6"};
@@ -132,7 +134,23 @@ public class MainActivity  extends AppCompatActivity {
 
             startActivity(intent);
         }
+        else if(position==7){
+            MoreOptions more = new MoreOptions();
+            Bundle b = new Bundle();
+            b.putString("Title","About Us");
+            b.putString("Detail", "This App is a global start application which aims to bring about a change in the way the society acts and walks in his way which Christ. \n");
+            more.setArguments(b);
+            more.show(getFragmentManager(),"About us");
+        }
 
+        else if(position==8){
+            ContactUsOptions more = new ContactUsOptions();
+            Bundle b = new Bundle();
+            b.putString("Title","Contact Us");
+            b.putString("Detail", "This App is a global start application which aims to bring about a chhnage in the way the society acts and walks in his way which Christ. \n");
+            more.setArguments(b);
+            more.show(getFragmentManager(),"Contact us");
+        }
     }
     private void setupGridMenu() {
         List<GridMenu> menus = new ArrayList<>();
@@ -142,6 +160,9 @@ public class MainActivity  extends AppCompatActivity {
         menus.add(new GridMenu("Learn", R.drawable.groups));
         menus.add(new GridMenu("Do", R.drawable.lists));
         menus.add(new GridMenu("Goal", R.drawable.profile));
+        menus.add(new GridMenu("Testimony", R.drawable.profile));
+        menus.add(new GridMenu("About", R.drawable.profile));
+        menus.add(new GridMenu("Contact", R.drawable.profile));
 
         mGridMenuFragment.setupMenu(menus);
     }

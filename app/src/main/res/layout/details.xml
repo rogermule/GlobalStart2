@@ -75,18 +75,26 @@
                     android:gravity="center"
                     android:background="@color/colorBlue"
                     android:textColor="#fff"
-                    android:textSize="30dp"
-                    android:text="News Title"
+                    android:textSize="25dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+
                 <TextView
                     android:id="@+id/txt_news_detail_content"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:textSize="17dp"
+                    android:layout_margin="10dp"
+                    android:textSize="19dp"
                     android:text="@string/lorem_ipsum"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
-
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="17dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:id="@+id/detail_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
             </LinearLayout>
 
         </android.support.v7.widget.CardView>

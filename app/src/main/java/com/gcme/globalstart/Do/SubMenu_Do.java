@@ -14,6 +14,7 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.gcme.globalstart.Director;
 import com.gcme.globalstart.Model.SubMenuItem;
 import com.gcme.globalstart.R;
 
@@ -41,7 +42,7 @@ public class SubMenu_Do extends AppCompatActivity {
 //        String[] title = getIntent().getExtras().getStringArray("titles");
 //        String[] desc = getIntent().getExtras().getStringArray("descs");
 
-        String[] id = new String[]{"1","2","3"};
+        String[] id = new String[]{"0","1","2"};
         String[] title = new String[]{"Prayer","Find Others to Help","Take Action"};
         String[] desc = new String[]{"pray","help","Action time"};
 
@@ -96,7 +97,7 @@ public class SubMenu_Do extends AppCompatActivity {
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(final int position, View convertView, ViewGroup parent) {
             LayoutInflater inflate = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             convertView = inflate.inflate(R.layout.single_layout, null);
@@ -113,7 +114,7 @@ public class SubMenu_Do extends AppCompatActivity {
                 convertView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(context, Details_Do.class);
+                        Intent intent = Director.getDo(context,Integer.parseInt(menus.get(position).getId()));
                         context.startActivity(intent);
                     }
                 });

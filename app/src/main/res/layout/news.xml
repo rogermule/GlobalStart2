@@ -78,6 +78,7 @@
                     android:textSize="30dp"
                     android:text="News Title"
                     android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
                 <TextView
                     android:id="@+id/txt_news_detail_content"
                     android:layout_width="match_parent"

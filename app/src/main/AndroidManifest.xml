@@ -95,7 +95,7 @@
         </activity>
 
         <activity
-            android:name=".Do.Details_Do"
+            android:name=".Do.Do_Prayer"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -108,7 +108,95 @@
         </activity>
 
         <activity
-            android:name=".Goal.Details_Goal"
+            android:name=".Do.Do_Find_Others"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Do.SubMenu_Do" />
+        </activity>
+
+        <activity
+            android:name=".Do.Do_Take_Action"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Do.SubMenu_Do" />
+        </activity>
+
+
+
+        <activity
+            android:name=".Goal.Goal_Know_Goal"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Goal.SubMenu_Goal" />
+        </activity>
+        <activity
+            android:name=".Goal.Goal_Win"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Goal.SubMenu_Goal" />
+        </activity>
+        <activity
+            android:name=".Goal.Goal_Sowing_Evangelism"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Goal.SubMenu_Goal" />
+        </activity>
+        <activity
+            android:name=".Goal.Goal_Build"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Goal.SubMenu_Goal" />
+        </activity>
+        <activity
+            android:name=".Goal.Goal_Send"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Goal.SubMenu_Goal" />
+        </activity>
+        <activity
+            android:name=".Goal.Goal_Movement"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -120,8 +208,10 @@
                 android:value=".Goal.SubMenu_Goal" />
         </activity>
 
+
+
         <activity
-            android:name=".GodHeart.Details_GodHeart"
+            android:name=".GodHeart.GodHeart_Teenager"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -134,7 +224,71 @@
         </activity>
 
         <activity
-            android:name=".Learn.Details_Learn"
+            android:name=".GodHeart.GodHeart_Examples"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GodHeart.SubMenu_GodHeart" />
+        </activity>
+
+        <activity
+            android:name=".GodHeart.GodHeart_Take_Action"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GodHeart.SubMenu_GodHeart" />
+        </activity>
+
+
+
+        <activity
+            android:name=".Learn.Learn_Understand_Youth"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Learn.SubMenu_Learn" />
+        </activity>
+        <activity
+            android:name=".Learn.Learn_Jesus_Model"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Learn.SubMenu_Learn" />
+        </activity>
+        <activity
+            android:name=".Learn.Learn_How_To_Learn"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Learn.SubMenu_Learn" />
+        </activity>
+        <activity
+            android:name=".Learn.Learn_Take_Action"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

@@ -11,35 +11,31 @@ import android.widget.TextView;
 
 public class Intro extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
-    ImageView image;
+    ImageView image,detail_image;
     TextView tv_title, tv_content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.news);
+        setContentView(R.layout.details);
         image = (ImageView) findViewById(R.id.image);
         image.setImageResource(R.drawable.pic2);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        detail_image = (ImageView) findViewById(R.id.detail_image);
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        String title = "Global start has been Launched";
-        String content = "The highly anticipated mobile based system has been officially released. The app is believed to change the " +
-                "way teenager evangelism is accomplished and helps to equip the youth, church and every one to do a strong teenager " +
-                "evangelism. \n \n The highly anticipated mobile based system has been officially released. The app is believed to change the way " +
-                "teenager evangelism is accomplished and helps to equip the youth, church and every one to do a strong teenager evangelism." +
-                "The highly anticipated mobile based system has been officially released. The app is believed to change the way teenager evangelism " +
-                "is accomplished and helps to equip the youth, church and every one to do a strong teenager evangelism." +
-                "\n" +
-                " \n" +
-                " The highly anticipated mobile based system has been officially released. The app is believed to change the way" +
-                "teenager evangelism is accomplished and helps to equip the youth, church and every one to do a strong teenager evangelism." +
-                "The highly anticipated mobile based system has been officially released. The app is believed to change the way teenager evangelism" +
-                "is accomplished and helps to equip the youth, church and every one to do a strong teenager evangelism.";
+        String title = "Intro .. ";
+        String content = "Can you imagine a day when the teenagers of your country would have the opportunity to ... " +
+                "\n  => Hear the gospel" +
+                "\n  => Respond by faith" +
+                "\n  => Walk with God" +
+                "\n  => Become spiritual multipliers" +
+                "\n\nIf that is your desire or if you dare to believe God to raise up teenagers to become leaders on their campuses and to be involved in helping reach the world, then get on your knees and pray!" +
+                "\n\nWith faith and dependence on the Lord, take these principles and use them in your country and watch what God will do in and through the lives of teenagers.\n";
 
 //        String title = getIntent().getExtras().getString("title");
 //        String content = getIntent().getExtras().getString("desc");
@@ -48,6 +44,7 @@ public class Intro extends AppCompatActivity {
         collapsingToolbarLayout.setTitle(title);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
 
+        detail_image.setImageResource(R.drawable.pic);
         tv_title.setText(title);
         tv_content.setText(content);
 
