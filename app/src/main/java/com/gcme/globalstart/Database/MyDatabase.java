@@ -5,10 +5,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.gcme.globalstart.globalstart.DataTypes.News_Data;
-import com.gcme.globalstart.globalstart.DataTypes.News_Log;
-import com.gcme.globalstart.globalstart.Global_Start;
-import com.gcme.globalstart.globalstart.News_Feed.NewsFeed_Object;
+import com.gcme.globalstart.Global_Start;
+import com.gcme.globalstart.Model.News_Data;
+import com.gcme.globalstart.Model.News_Log;
+import com.gcme.globalstart.News_Feed.NewsFeed_Object;
 
 import java.util.ArrayList;
 

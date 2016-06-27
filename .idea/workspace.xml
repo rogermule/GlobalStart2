@@ -10,9 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1634b008-4bb4-4dda-ad72-c44f5b40d3ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/News_Feed/NewsFeed_Adapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/News_Feed/NewsFeed_Adapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/News_Feed/NewsFeed_Detail.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/News_Feed/NewsFeed_Detail.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/SampleApp.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Database/MyDatabase.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Database/MyDatabase.java" />
     </list>
     <ignored path="GlobalStart2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,20 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="News_Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Model/News_Data.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NewsFeed_Object.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/News_Feed/NewsFeed_Object.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -73,32 +64,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sync_Service.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Sync/Sync_Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1067#1068#0" expanded="false" />
-                <element signature="e#1094#1095#0" expanded="false" />
-                <element signature="e#2046#2061#0" expanded="false" />
-                <marker date="1467022233850" expanded="true" signature="1002:1025" placeholder="@{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageDownloader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Sync/ImageDownloader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -135,12 +100,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyDatabase.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Database/MyDatabase.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.46363637">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+              <folding>
+                <element signature="e#262#280#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1844,7 +1811,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/SubMenu_Learn.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/SubMenu_Do.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/SubMenu_Goal.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Do/Details_Do.java" />
@@ -1874,7 +1840,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Win.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Build.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Director.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/SubMenu_Goal.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/GodHeart/GodHeart_Teenager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/GodHeart/GodHeart_Examples.java" />
@@ -1894,6 +1859,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/News_Feed/NewsFeed_Adapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/News_Feed/NewsFeed_Detail.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Global_Start.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Database/MyDatabase.java" />
       </list>
     </option>
@@ -2055,28 +2022,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="globalstart" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GlobalStart2" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -2095,11 +2040,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gcme.globalstart" />
       <recent name="com.gcme.globalstart.Goal" />
       <recent name="com.gcme.globalstart.Do" />
       <recent name="com.gcme.globalstart.Learn" />
       <recent name="com.gcme.globalstart.GodHeart" />
-      <recent name="com.gcme.globalstart" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\VLM\GlobalStart2\app\src\main\java\com\gcme\globalstart" />
@@ -2436,16 +2381,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/pic2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/pic.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/timeline.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2618,39 +2553,6 @@
           <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="34.0">
-          <caret line="140" column="40" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
-          <folding>
-            <element signature="e#262#280#0" expanded="true" />
-            <element signature="e#436#454#0" expanded="true" />
-            <element signature="e#860#878#0" expanded="true" />
-            <element signature="e#1168#1186#0" expanded="true" />
-            <element signature="e#1632#1650#0" expanded="true" />
-            <element signature="e#2088#2106#0" expanded="true" />
-            <element signature="e#2540#2558#0" expanded="true" />
-            <element signature="e#2998#3016#0" expanded="true" />
-            <element signature="e#3449#3467#0" expanded="true" />
-            <element signature="e#3906#3924#0" expanded="true" />
-            <element signature="e#4363#4381#0" expanded="true" />
-            <element signature="e#4824#4842#0" expanded="true" />
-            <element signature="e#5280#5298#0" expanded="true" />
-            <element signature="e#5750#5768#0" expanded="true" />
-            <element signature="e#6208#6226#0" expanded="true" />
-            <element signature="e#6665#6683#0" expanded="true" />
-            <element signature="e#7126#7144#0" expanded="true" />
-            <element signature="e#7598#7616#0" expanded="true" />
-            <element signature="e#8076#8094#0" expanded="true" />
-            <element signature="e#8557#8575#0" expanded="true" />
-            <element signature="e#9039#9057#0" expanded="true" />
-            <element signature="e#9507#9525#0" expanded="true" />
-            <element signature="e#9976#9994#0" expanded="true" />
-            <element signature="e#10444#10462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2883,11 +2785,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Global_Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5702247">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Database/MyDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.28651685">
+          <caret line="130" column="40" selection-start-line="130" selection-start-column="40" selection-end-line="130" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2144#2155#0" expanded="true" />
+            <element signature="e#3050#3060#0" expanded="true" />
+            <element signature="e#3678#3689#0" expanded="true" />
+            <element signature="e#4627#4644#0" expanded="true" />
+            <element signature="e#6093#6104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46363637">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <element signature="e#262#280#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
