@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.util.Log;
 
 import com.gcme.globalstart.Database.MyDatabase;
+import com.gcme.globalstart.News_Feed.NewsFeed_Fragment;
 import com.goka.blurredgridmenu.BlurredGridMenuConfig;
 
 import org.json.JSONArray;

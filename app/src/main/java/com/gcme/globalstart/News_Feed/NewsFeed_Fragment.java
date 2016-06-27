@@ -10,8 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.gcme.globalstart.globalstart.Database.MyDatabase;
-import com.gcme.globalstart.globalstart.R;
+import com.gcme.globalstart.Database.MyDatabase;
+import com.gcme.globalstart.R;
 
 /**
  * Created by BENGEOS on 3/17/16.
