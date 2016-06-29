@@ -1,5 +1,6 @@
 package com.gcme.globalstart.Goal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,11 +11,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gcme.globalstart.R;
+import com.gcme.globalstart.Share;
 
 public class Goal_Know_Goal extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     ImageView image,detail_image;
     TextView tv_title, tv_content;
+
+    String title;
+    String content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,8 @@ public class Goal_Know_Goal extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        String title = "Know the Goal .. ";
-        String content = "Jesus went from town to town preaching the Good News. He spoke to the masses and ate dinner with individuals. He chose 12 ordinary men to disciple, train and pour His life into. Jesus modeled His life and taught them to love, serve, pray, and minister to others. Then He equipped them with the Word and the Holy Spirit and sent them out to disciple the nations." +
+        title = "Know the Goal .. ";
+        content = "Jesus went from town to town preaching the Good News. He spoke to the masses and ate dinner with individuals. He chose 12 ordinary men to disciple, train and pour His life into. Jesus modeled His life and taught them to love, serve, pray, and minister to others. Then He equipped them with the Word and the Holy Spirit and sent them out to disciple the nations." +
                 "\n\nJesus had three main aspects to His movement:"+
                 "\n\n1. Win - people to Himself through evangelism " +
                 "\n2. Build - disciples – teaching them to be in relationship with Him and training them to do the work that He was doing " +
@@ -65,7 +70,11 @@ public class Goal_Know_Goal extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id==R.id.action_share){
+            Intent shareintent = Share.share(content);
+            startActivity(Intent.createChooser(shareintent, getResources().getString(R.string.app_name)));
 
+        }
         return super.onOptionsItemSelected(item);
     }
 

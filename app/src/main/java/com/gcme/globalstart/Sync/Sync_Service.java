@@ -9,9 +9,9 @@ import android.support.annotation.Nullable;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-import com.gcme.globalstart.globalstart.DataTypes.News_Data;
-import com.gcme.globalstart.globalstart.Database.MyDatabase;
-import com.gcme.globalstart.globalstart.Global_Start;
+import com.gcme.globalstart.Database.MyDatabase;
+import com.gcme.globalstart.Global_Start;
+import com.gcme.globalstart.Model.News_Data;
 import com.google.gson.Gson;
 
 import org.apache.http.NameValuePair;
@@ -112,7 +112,6 @@ public class Sync_Service extends Service {
                         Log.i("Sync_Service", "Downloading :\n"+image_urls.get(0).getImage());
                     }
                 }
-
             }
             new Make_Service().execute();
             Log.i("Sync_Service", "Sync Service Restarted!");

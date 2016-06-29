@@ -1,5 +1,6 @@
 package com.gcme.globalstart.Do;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,11 +11,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gcme.globalstart.R;
+import com.gcme.globalstart.Share;
 
 public class Do_Find_Others extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     ImageView image,detail_image;
     TextView tv_title, tv_content;
+
+
+    String title;
+    String content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +36,8 @@ public class Do_Find_Others extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        String title = "Find Others to help .. ";
-        String content = "Jesus chose 12 disciples and many others to help fulfill His purposes. He chose those who were teachable and willing to count the cost." +
+        title = "Find Others to help .. ";
+        content = "Jesus chose 12 disciples and many others to help fulfill His purposes. He chose those who were teachable and willing to count the cost." +
                 "\n\n1. You will also need people who will join you in the mission to reach high school students. There are many opportunities to help, such as being a part of your prayer team, helping to reach and disciple students, giving financially, providing access to the schools, helping with special events, providing food, giving administrative assistance, and so much more." +
                 "\n\nHere are some things to look for in volunteers: " +
                 "\n• A growing relationship with God and reliance on the power of the Holy Spirit " +
@@ -68,7 +74,11 @@ public class Do_Find_Others extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id==R.id.action_share){
+            Intent shareintent = Share.share(content);
+            startActivity(Intent.createChooser(shareintent, getResources().getString(R.string.app_name)));
 
+        }
         return super.onOptionsItemSelected(item);
     }
 

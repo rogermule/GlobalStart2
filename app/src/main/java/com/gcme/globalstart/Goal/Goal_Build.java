@@ -1,5 +1,6 @@
 package com.gcme.globalstart.Goal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,11 +11,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gcme.globalstart.R;
+import com.gcme.globalstart.Share;
 
 public class Goal_Build extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     ImageView image,detail_image;
     TextView tv_title, tv_content;
+
+    String title;
+    String content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,8 @@ public class Goal_Build extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        String title = "Build .. ";
-        String content = "In Matthew 28:19-20, Jesus says, “Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.” \\n\\n Jesus spent time with His disciples, modeling His life and ministry and helping them grow into people who would continue a ministry of evangelism and discipleship long after He was gone (John 14:12)." +
+        title = "Build .. ";
+        content = "In Matthew 28:19-20, Jesus says, “Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, and teaching them to obey everything I have commanded you. And surely I am with you always, to the very end of the age.” \\n\\n Jesus spent time with His disciples, modeling His life and ministry and helping them grow into people who would continue a ministry of evangelism and discipleship long after He was gone (John 14:12)." +
                 "\n\nSpecific things that Jesus taught His disciples:"+
                 "\n• The importance of time with the Lord (Mark 1:35) " +
                 "\n• Dependence on God (John 18:28,29) " +
@@ -75,7 +80,11 @@ public class Goal_Build extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id==R.id.action_share){
+            Intent shareintent = Share.share(content);
+            startActivity(Intent.createChooser(shareintent, getResources().getString(R.string.app_name)));
 
+        }
         return super.onOptionsItemSelected(item);
     }
 

@@ -1,5 +1,6 @@
 package com.gcme.globalstart.Goal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,11 +11,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gcme.globalstart.R;
+import com.gcme.globalstart.Share;
 
 public class Goal_Send extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     ImageView image,detail_image;
     TextView tv_title, tv_content;
+
+    String title;
+    String content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,8 @@ public class Goal_Send extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        String title = "Send .. ";
-        String content = "\nAnd these things you have heard me say in the presence of many witnesses entrust to reliable men who will also be qualified to teach others” (2 Timothy 2:2). \\n\\nTeenagers can be leaders. They have been called to multiply their faith. Just as Jesus trained His young disciples to carry on the ministry you can train your students to multiply their faith to their friends, school, country and to the world (Acts 1:8)!" +
+        title = "Send .. ";
+        content = "\nAnd these things you have heard me say in the presence of many witnesses entrust to reliable men who will also be qualified to teach others” (2 Timothy 2:2). \\n\\nTeenagers can be leaders. They have been called to multiply their faith. Just as Jesus trained His young disciples to carry on the ministry you can train your students to multiply their faith to their friends, school, country and to the world (Acts 1:8)!" +
                 "\n\nSome ways that teenagers can lead:  "+
                 "\n• personal evangelism/share their faith " +
                 "\n• plan and take ownership of outreaches " +
@@ -73,7 +78,11 @@ public class Goal_Send extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id==R.id.action_share){
+            Intent shareintent = Share.share(content);
+            startActivity(Intent.createChooser(shareintent, getResources().getString(R.string.app_name)));
 
+        }
         return super.onOptionsItemSelected(item);
     }
 

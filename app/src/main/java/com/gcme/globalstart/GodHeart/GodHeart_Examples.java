@@ -1,5 +1,6 @@
 package com.gcme.globalstart.GodHeart;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,11 +11,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gcme.globalstart.R;
+import com.gcme.globalstart.Share;
 
 public class GodHeart_Examples extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     ImageView image,detail_image;
     TextView tv_title, tv_content;
+
+    String title;
+    String content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,8 @@ public class GodHeart_Examples extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        String title = "Biblical Examples ";
-        String content = "As a youth, God called Josiah to turn an evil and idolatrous nation to one who sought after God" +
+        title = "Biblical Examples ";
+        content = "As a youth, God called Josiah to turn an evil and idolatrous nation to one who sought after God" +
                 "\n\nMary was chosen as a young girl to give birth to the Savior of the world! " +
                 "\n\n David, a teenage shepherd boy, was called to fight a powerful nation and defeat it to establish the kingdom of Israel." +
                 "\n\n God called Joseph, Samuel, Esther, Timothy, the disciples and many other teenagers to become great leaders. It is obvious that He sees teenagers as strategic and essential to His heart and His ministry. In fact, 1 Timothy 4:12 says, “Don’t let anyone look down on you because you are young, but set an example for the believers in speech, in conduct, in love, in faith and in purity.\n";
@@ -63,7 +68,11 @@ public class GodHeart_Examples extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id==R.id.action_share){
+            Intent shareintent = Share.share(content);
+            startActivity(Intent.createChooser(shareintent, getResources().getString(R.string.app_name)));
 
+        }
         return super.onOptionsItemSelected(item);
     }
 

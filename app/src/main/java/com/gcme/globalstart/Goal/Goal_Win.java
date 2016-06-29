@@ -1,5 +1,6 @@
 package com.gcme.globalstart.Goal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,11 +11,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gcme.globalstart.R;
+import com.gcme.globalstart.Share;
 
 public class Goal_Win extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     ImageView image,detail_image;
     TextView tv_title, tv_content;
+
+    String title;
+    String content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,8 @@ public class Goal_Win extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        String title = "Win .. ";
-        String content = "In Mark 16:15 Jesus said to His disciples, “Go into all the world and preach the good news to all creation.” Jesus went out. Paul, Timothy, the disciples and many others also went out and proclaimed the Good News. We are also called to go!" +
+        title = "Win .. ";
+        content = "In Mark 16:15 Jesus said to His disciples, “Go into all the world and preach the good news to all creation.” Jesus went out. Paul, Timothy, the disciples and many others also went out and proclaimed the Good News. We are also called to go!" +
                 "\n\nHow can you expose as many students to the gospel and then follow up and disciple those who respond? This will look different in every country, city or school, depending on the openness of the school campus and your access to students.\n" +
                 "\n\nTaking Action: "+
                 "\n\n1. Write down as many target groups among teenagers that you know about. " +
@@ -67,7 +72,11 @@ public class Goal_Win extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id==R.id.action_share){
+            Intent shareintent = Share.share(content);
+            startActivity(Intent.createChooser(shareintent, getResources().getString(R.string.app_name)));
 
+        }
         return super.onOptionsItemSelected(item);
     }
 

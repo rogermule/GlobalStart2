@@ -1,5 +1,6 @@
 package com.gcme.globalstart.Learn;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,11 +11,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gcme.globalstart.R;
+import com.gcme.globalstart.Share;
 
 public class Learn_Take_Action extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     ImageView image,detail_image;
     TextView tv_title, tv_content;
+
+    String title;
+    String content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,8 @@ public class Learn_Take_Action extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        String title = "Take Action .. ";
-        String content = "\nWrite a survey of 5 -10 questions to get to know the teenage culture. Continue to survey as many students as you can and never stop learning about students and their lives!\n";
+        title = "Take Action .. ";
+        content = "\nWrite a survey of 5 -10 questions to get to know the teenage culture. Continue to survey as many students as you can and never stop learning about students and their lives!\n";
 
 //        String title = getIntent().getExtras().getString("title");
 //        String content = getIntent().getExtras().getString("desc");
@@ -61,7 +66,11 @@ public class Learn_Take_Action extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id==R.id.action_share){
+            Intent shareintent = Share.share(content);
+            startActivity(Intent.createChooser(shareintent, getResources().getString(R.string.app_name)));
 
+        }
         return super.onOptionsItemSelected(item);
     }
 

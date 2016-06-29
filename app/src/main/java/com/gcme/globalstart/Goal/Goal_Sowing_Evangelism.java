@@ -1,5 +1,6 @@
 package com.gcme.globalstart.Goal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,11 +11,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gcme.globalstart.R;
+import com.gcme.globalstart.Share;
 
 public class Goal_Sowing_Evangelism extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     ImageView image,detail_image;
     TextView tv_title, tv_content;
+
+    String title;
+    String content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,8 @@ public class Goal_Sowing_Evangelism extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        String title = "Sowing and Evangelism.. ";
-        String content = "Sowing and Evangelism with access to the school" +
+        title = "Sowing and Evangelism.. ";
+        content = "Sowing and Evangelism with access to the school" +
                 "\n\nTalk to teachers, headmasters, principals, students, churches and parents to find the schools that are most open to you serving them and/or having a Christian influence. In some schools you will be able to talk about Christ. In other schools you will only be able to talk about felt needs and share Christ outside of the school." +
                 "Become an insider within the school through serving them. As you serve you can meet and begin to develop relationships with students in school, at lunch, after school, or any way that you can gain access to them. \n" +
 
@@ -90,7 +95,11 @@ public class Goal_Sowing_Evangelism extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id==R.id.action_share){
+            Intent shareintent = Share.share(content);
+            startActivity(Intent.createChooser(shareintent, getResources().getString(R.string.app_name)));
 
+        }
         return super.onOptionsItemSelected(item);
     }
 

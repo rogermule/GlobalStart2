@@ -1,5 +1,6 @@
 package com.gcme.globalstart.Do;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,11 +11,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gcme.globalstart.R;
+import com.gcme.globalstart.Share;
 
 public class Do_Take_Action extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     ImageView image,detail_image;
     TextView tv_title, tv_content;
+
+    String title;
+    String content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,8 @@ public class Do_Take_Action extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        String title = "Take Action .. ";
-        String content = "1. Make a list of the needs you have and everyone who could join you in ministry: College students, teachers, parents, churches, Christian teenagers, community people and others. Can you connect with other organizations? Churches? College ministries? Remember, no idea is a bad idea!" +
+        title = "Take Action .. ";
+        content = "1. Make a list of the needs you have and everyone who could join you in ministry: College students, teachers, parents, churches, Christian teenagers, community people and others. Can you connect with other organizations? Churches? College ministries? Remember, no idea is a bad idea!" +
                 "\n\n2. Challenge them to the exciting opportunity of being a part of working with young people who are on God’s heart!\n";
 
 //        String title = getIntent().getExtras().getString("title");
@@ -62,7 +67,11 @@ public class Do_Take_Action extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id==R.id.action_share){
+            Intent shareintent = Share.share(content);
+            startActivity(Intent.createChooser(shareintent, getResources().getString(R.string.app_name)));
 
+        }
         return super.onOptionsItemSelected(item);
     }
 

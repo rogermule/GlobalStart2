@@ -1,5 +1,6 @@
 package com.gcme.globalstart.Learn;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -10,11 +11,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gcme.globalstart.R;
+import com.gcme.globalstart.Share;
 
 public class Learn_Understand_Youth extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     ImageView image,detail_image;
     TextView tv_title, tv_content;
+
+    String title;
+    String content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +35,8 @@ public class Learn_Understand_Youth extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        String title = "Understand the Youth .. ";
-        String content = "In order to minister most effectively, you need to know who you are ministering to." +
+        title = "Understand the Youth .. ";
+        content = "In order to minister most effectively, you need to know who you are ministering to." +
                 "\n\n• What is on their hearts – their joys, burdens, desires, hopes and dreams? \\n• What are their greatest needs? \\n• What outside influences affect their lives? \\n• What are their personal challenges: peer pressure, bullying, performance, parental neglect, home life? " +
                 "\n\n The more you understand them, the more you will be able to use practical and effective ways to reach them.";
 
@@ -63,7 +68,11 @@ public class Learn_Understand_Youth extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id==R.id.action_share){
+            Intent shareintent = Share.share(content);
+            startActivity(Intent.createChooser(shareintent, getResources().getString(R.string.app_name)));
 
+        }
         return super.onOptionsItemSelected(item);
     }
 

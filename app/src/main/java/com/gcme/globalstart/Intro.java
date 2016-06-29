@@ -1,5 +1,6 @@
 package com.gcme.globalstart;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +14,9 @@ public class Intro extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbarLayout;
     ImageView image,detail_image;
     TextView tv_title, tv_content;
+
+    String title;
+    String content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +32,8 @@ public class Intro extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        String title = "Intro .. ";
-        String content = "Can you imagine a day when the teenagers of your country would have the opportunity to ... " +
+        title = "Intro .. ";
+        content = "Can you imagine a day when the teenagers of your country would have the opportunity to ... " +
                 "\n  => Hear the gospel" +
                 "\n  => Respond by faith" +
                 "\n  => Walk with God" +
@@ -65,7 +69,11 @@ public class Intro extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id==R.id.action_share){
+            Intent shareintent = Share.share(content);
+            startActivity(Intent.createChooser(shareintent, getResources().getString(R.string.app_name)));
 
+        }
         return super.onOptionsItemSelected(item);
     }
 
