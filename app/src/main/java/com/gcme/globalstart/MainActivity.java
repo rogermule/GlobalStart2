@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.gcme.globalstart.Do.SubMenu_Do;
 import com.gcme.globalstart.Goal.SubMenu_Goal;
@@ -65,7 +66,11 @@ public class MainActivity  extends AppCompatActivity {
     }
 
     public void chooseSubMenu(int position){
-        if(position == 1){
+        if(position == 0){
+            Toast.makeText(this,"NewsFeed",Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(MainActivity.this,NewsFeed.class);
+            startActivity(intent);
+        }else  if(position == 1){
             Intent intent = new Intent(MainActivity.this,Intro.class);
             startActivity(intent);
         }
