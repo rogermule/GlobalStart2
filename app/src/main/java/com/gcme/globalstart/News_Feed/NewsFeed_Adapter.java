@@ -59,7 +59,7 @@ public class NewsFeed_Adapter extends RecyclerView.Adapter<NewsFeed_Adapter.Data
     public NewsFeed_Adapter(Context context, ArrayList<NewsFeed_Object> newsFeeds){
         this.NewsFeeds = newsFeeds;
         this.myContext = context;
-        fileManager = new FileManager();
+        fileManager = new FileManager(context);
 
     }
     @Override
@@ -74,14 +74,15 @@ public class NewsFeed_Adapter extends RecyclerView.Adapter<NewsFeed_Adapter.Data
     }
     @Override
     public void onBindViewHolder(DataObjectHolder holder, int position) {
-        holder.Title.setText(NewsFeeds.get(position).getTitle());
-        File file = fileManager.Create_ImageFile("Image"+NewsFeeds.get(position).getNewsID()+".jpg");
-        if(file != null){
-            Bitmap image = BitmapFactory.decodeFile(file.getAbsolutePath());
-            holder.Image.setImageBitmap(image);
-        }
-        holder.Content.setText(NewsFeeds.get(position).getContent());
-        holder.dateTime.setText(NewsFeeds.get(position).getPub_Date());
+
+//        holder.Title.setText(NewsFeeds.get(position).getTitle());
+//      //  File file = fileManager.Create_ImageFile("Image"+NewsFeeds.get(position).getNewsID()+".jpg");
+//        if(file != null){
+//            Bitmap image = BitmapFactory.decodeFile(file.getAbsolutePath());
+//            holder.Image.setImageBitmap(image);
+//        }
+//        holder.Content.setText(NewsFeeds.get(position).getContent());
+//        holder.dateTime.setText(NewsFeeds.get(position).getPub_Date());
 
     }
     public void addItem(NewsFeed_Object news){

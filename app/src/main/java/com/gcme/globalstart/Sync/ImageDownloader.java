@@ -22,7 +22,7 @@ public class ImageDownloader extends AsyncTask<String,String,String> {
     private boolean isRunning;
     public ImageDownloader(Context context,String image_url){
         ImageURL = image_url;
-        fileManager = new FileManager();
+        fileManager = new FileManager(context);
         isRunning = false;
         myContext = context;
     }
@@ -46,31 +46,31 @@ public class ImageDownloader extends AsyncTask<String,String,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        int count = 0;
-        try{
-            URL url = new URL(ImageURL);
-            URLConnection connection = url.openConnection();
-            connection.connect();
-            connection.setReadTimeout(10000);
-            connection.setConnectTimeout(10000);
-            int fileSize = connection.getContentLength();
-
-            InputStream inputStream = new BufferedInputStream(url.openStream());
-            File Dest = fileManager.Create_ImageFile(FileName);
-            OutputStream outputStream = new FileOutputStream(Dest);
-            byte data[] = new byte[1024];
-            long total = 0;
-            while ((count = inputStream.read(data))!= -1){
-                total +=count;
-                outputStream.write(data,0,count);
-                FileSize = total;
-            }
-            outputStream.flush();
-            outputStream.close();
-            inputStream.close();
-        }catch (Exception e){
-            isRunning = false;
-        }
+//        int count = 0;
+//        try{
+//            URL url = new URL(ImageURL);
+//            URLConnection connection = url.openConnection();
+//            connection.connect();
+//            connection.setReadTimeout(10000);
+//            connection.setConnectTimeout(10000);
+//            int fileSize = connection.getContentLength();
+//
+//            InputStream inputStream = new BufferedInputStream(url.openStream());
+//            //File Dest = fileManager.Create_ImageFile(FileName);
+//           // OutputStream outputStream = new FileOutputStream(Dest);
+//            byte data[] = new byte[1024];
+//            long total = 0;
+//            while ((count = inputStream.read(data))!= -1){
+//                total +=count;
+//                outputStream.write(data,0,count);
+//                FileSize = total;
+//            }
+//            outputStream.flush();
+//            outputStream.close();
+//            inputStream.close();
+//        }catch (Exception e){
+//            isRunning = false;
+//        }
         return null;
     }
 

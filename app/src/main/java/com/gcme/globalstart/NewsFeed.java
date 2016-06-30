@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.gcme.globalstart.Database.MyDatabase;
+import com.gcme.globalstart.News_Feed.NewsFeedAdapter;
 import com.gcme.globalstart.News_Feed.NewsFeed_Adapter;
 import com.gcme.globalstart.News_Feed.NewsFeed_Object;
 
@@ -30,19 +31,19 @@ public class NewsFeed extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.newsfeed_page);
+        setContentView(R.layout.news_feed_page);
         myDatabase = new MyDatabase(this);
         myRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         mLayoutManager = new LinearLayoutManager(this);
         myRecyclerView.setLayoutManager(mLayoutManager);
-        ArrayList<NewsFeed_Object> bb = new ArrayList<>();
-        bb.add(new NewsFeed_Object());
-        bb.add(new NewsFeed_Object());
-        bb.add(new NewsFeed_Object());
-        bb.add(new NewsFeed_Object());
+        ArrayList<com.gcme.globalstart.News_Feed.NewsFeed> bb = new ArrayList<>();
+        bb.add(new com.gcme.globalstart.News_Feed.NewsFeed());
+        bb.add(new com.gcme.globalstart.News_Feed.NewsFeed());
+        bb.add(new com.gcme.globalstart.News_Feed.NewsFeed());
+        bb.add(new com.gcme.globalstart.News_Feed.NewsFeed());
         Toast.makeText(this,"There are: "+bb.size(),Toast.LENGTH_LONG).show();
 
-        mAdapter = new NewsFeed_Adapter(this,bb);
+        mAdapter = new NewsFeedAdapter(this,bb);
         myRecyclerView.setAdapter(mAdapter);
         myContext = this;
     }
