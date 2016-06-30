@@ -27,7 +27,7 @@ public class GodHeart_Take_Action extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.details);
         image = (ImageView) findViewById(R.id.image);
-        image.setImageResource(R.drawable.pic2);
+        image.setImageResource(R.drawable.img_take_action);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

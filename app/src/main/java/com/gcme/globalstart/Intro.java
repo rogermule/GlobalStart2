@@ -24,7 +24,7 @@ public class Intro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.details);
         image = (ImageView) findViewById(R.id.image);
-        image.setImageResource(R.drawable.pic2);
+        image.setImageResource(R.drawable.img_intro);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

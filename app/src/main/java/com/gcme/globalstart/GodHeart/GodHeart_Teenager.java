@@ -27,7 +27,7 @@ public class GodHeart_Teenager extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.details);
         image = (ImageView) findViewById(R.id.image);
-        image.setImageResource(R.drawable.pic2);
+        image.setImageResource(R.drawable.img_teenager);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -38,16 +38,14 @@ public class GodHeart_Teenager extends AppCompatActivity {
         title = "God's Heart for Teenager ";
         content = "Throughout history, God has chosen teenagers to help start revivals, lead spiritual movements, rule nations and change societies. He still involves them today. God desires to change students’ lives and give them a passion for Christ. They are vital in helping to fulfill the Great Commission.   " +
                 "\n\nWith faith and dependence on the Lord, take these principles and use them in your country and watch what God will do in and through the lives of teenagers." +
-                "\n\nWith faith and dependence on the Lord, take these principles and use them in your country and watch what God will do in and through the lives of teenagers.\n";
+                "\n\nWith faith and dependence on the Lord, take these principles and use them in your country and watch what God will do in and through the lives of teenagers.";
 
-//        String title = getIntent().getExtras().getString("title");
-//        String content = getIntent().getExtras().getString("desc");
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         collapsingToolbarLayout.setTitle(title);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
 
-        detail_image.setImageResource(R.drawable.pic);
+        //detail_image.setImageResource(R.drawable.img_intro);
         tv_title.setText(title);
         tv_content.setText(content);
 
