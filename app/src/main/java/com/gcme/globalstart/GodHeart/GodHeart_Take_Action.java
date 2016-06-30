@@ -48,7 +48,7 @@ public class GodHeart_Take_Action extends AppCompatActivity {
         collapsingToolbarLayout.setTitle(title);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
 
-        detail_image.setImageResource(R.drawable.pic);
+        //detail_image.setImageResource(R.drawable.pic);
         tv_title.setText(title);
         tv_content.setText(content);
 
