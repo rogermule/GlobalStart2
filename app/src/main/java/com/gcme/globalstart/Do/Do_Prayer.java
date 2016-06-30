@@ -27,7 +27,7 @@ public class Do_Prayer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.details);
         image = (ImageView) findViewById(R.id.image);
-        image.setImageResource(R.drawable.pic2);
+        image.setImageResource(R.drawable.img_prayer4);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -37,7 +37,7 @@ public class Do_Prayer extends AppCompatActivity {
 
         title = "Pray .. ";
         content = "Jesus had compassion for people, knowing that they were harassed and helpless, like sheep without a Shepherd (Matthew 9:36). Throughout Jesus’ ministry He would go away often to be with His Father and to pray (Luke 5:16). Prayer is the most important part of ministry. It expresses dependence on God and not on ourselves." +
-                "\n\n1. When you see the needs of students, how does it motivate you to pray? \\n 2. As you trust God to start and build a student movement, what prayer strategy will you develop?\n";
+                "\n\n1. When you see the needs of students, how does it motivate you to pray? \\n 2. As you trust God to start and build a student movement, what prayer strategy will you develop?";
 
 //        String title = getIntent().getExtras().getString("title");
 //        String content = getIntent().getExtras().getString("desc");
@@ -46,7 +46,7 @@ public class Do_Prayer extends AppCompatActivity {
         collapsingToolbarLayout.setTitle(title);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
 
-        detail_image.setImageResource(R.drawable.pic);
+        detail_image.setImageResource(R.drawable.img_prayer2);
         tv_title.setText(title);
         tv_content.setText(content);
 

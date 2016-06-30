@@ -24,7 +24,7 @@ public class Intro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.details);
         image = (ImageView) findViewById(R.id.image);
-        image.setImageResource(R.drawable.pic2);
+        image.setImageResource(R.drawable.img_intro);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -32,7 +32,7 @@ public class Intro extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
-        title = "Intro .. ";
+        title = "Intro ";
         content = "Can you imagine a day when the teenagers of your country would have the opportunity to ... " +
                 "\n  => Hear the gospel" +
                 "\n  => Respond by faith" +
@@ -48,8 +48,8 @@ public class Intro extends AppCompatActivity {
         collapsingToolbarLayout.setTitle(title);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
 
-        detail_image.setImageResource(R.drawable.pic);
-        tv_title.setText(title);
+        //detail_image.setImageResource(R.drawable.pic);
+        //tv_title.setText(title);
         tv_content.setText(content);
 
     }

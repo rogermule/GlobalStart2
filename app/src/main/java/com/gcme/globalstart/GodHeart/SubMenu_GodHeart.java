@@ -37,14 +37,11 @@ public class SubMenu_GodHeart extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         listView = (ListView) findViewById(R.id.listview);
-//
-//        String[] id = getIntent().getExtras().getStringArray("ids");
-//        String[] title = getIntent().getExtras().getStringArray("titles");
-//        String[] desc = getIntent().getExtras().getStringArray("descs");
+
 
         String[] id = new String[]{"0","1","2"};
         String[] title = new String[]{"Teenagers","Biblical Examples","Take Action"};
-        String[] desc = new String[]{"teenagers","examples","action"};
+        String[] desc = new String[]{"God's Heart for teenagers","Mary, David, Joseph, Samuel, Esther,..","So What should I do?"};
         ArrayList<SubMenuItem> menuItems = new ArrayList<SubMenuItem>();
 
         for(int i = 0; i<id.length ; i++){

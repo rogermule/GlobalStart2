@@ -27,7 +27,7 @@ public class Do_Take_Action extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.details);
         image = (ImageView) findViewById(R.id.image);
-        image.setImageResource(R.drawable.pic2);
+        image.setImageResource(R.drawable.img_take_action);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -46,7 +46,7 @@ public class Do_Take_Action extends AppCompatActivity {
         collapsingToolbarLayout.setTitle(title);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
 
-        detail_image.setImageResource(R.drawable.pic);
+        //detail_image.setImageResource(R.drawable.pic);
         tv_title.setText(title);
         tv_content.setText(content);
 

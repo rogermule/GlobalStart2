@@ -44,7 +44,7 @@ public class SubMenu_Learn extends AppCompatActivity {
 
         String[] id = new String[]{"0","1","2","3"};
         String[] title = new String[]{"Understand The Youth","Jesus's Model","How to Learn","Take Action"};
-        String[] desc = new String[]{"youth","model","learn","action time"};
+        String[] desc = new String[]{"You need to know who you are ministering","How did Jesus do it?","ASK, LOOK and LISTEN","What should I do?"};
 
 
         ArrayList<SubMenuItem> menuItems = new ArrayList<SubMenuItem>();

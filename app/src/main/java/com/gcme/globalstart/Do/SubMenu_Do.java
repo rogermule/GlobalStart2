@@ -44,7 +44,7 @@ public class SubMenu_Do extends AppCompatActivity {
 
         String[] id = new String[]{"0","1","2"};
         String[] title = new String[]{"Prayer","Find Others to Help","Take Action"};
-        String[] desc = new String[]{"pray","help","Action time"};
+        String[] desc = new String[]{"Prayer is very important","You need people who will join you","What to do?"};
 
         ArrayList<SubMenuItem> menuItems = new ArrayList<SubMenuItem>();
 

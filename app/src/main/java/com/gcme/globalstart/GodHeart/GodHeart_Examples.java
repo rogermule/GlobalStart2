@@ -27,7 +27,7 @@ public class GodHeart_Examples extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.details);
         image = (ImageView) findViewById(R.id.image);
-        image.setImageResource(R.drawable.pic2);
+        image.setImageResource(R.drawable.img_biblicalexamples);
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -39,7 +39,7 @@ public class GodHeart_Examples extends AppCompatActivity {
         content = "As a youth, God called Josiah to turn an evil and idolatrous nation to one who sought after God" +
                 "\n\nMary was chosen as a young girl to give birth to the Savior of the world! " +
                 "\n\n David, a teenage shepherd boy, was called to fight a powerful nation and defeat it to establish the kingdom of Israel." +
-                "\n\n God called Joseph, Samuel, Esther, Timothy, the disciples and many other teenagers to become great leaders. It is obvious that He sees teenagers as strategic and essential to His heart and His ministry. In fact, 1 Timothy 4:12 says, “Don’t let anyone look down on you because you are young, but set an example for the believers in speech, in conduct, in love, in faith and in purity.\n";
+                "\n\n God called Joseph, Samuel, Esther, Timothy, the disciples and many other teenagers to become great leaders. It is obvious that He sees teenagers as strategic and essential to His heart and His ministry. In fact, 1 Timothy 4:12 says, “Don’t let anyone look down on you because you are young, but set an example for the believers in speech, in conduct, in love, in faith and in purity.";
 //        String title = getIntent().getExtras().getString("title");
 //        String content = getIntent().getExtras().getString("desc");
 
@@ -47,7 +47,7 @@ public class GodHeart_Examples extends AppCompatActivity {
         collapsingToolbarLayout.setTitle(title);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
 
-        detail_image.setImageResource(R.drawable.pic);
+        //detail_image.setImageResource(R.drawable.pic);
         tv_title.setText(title);
         tv_content.setText(content);
 

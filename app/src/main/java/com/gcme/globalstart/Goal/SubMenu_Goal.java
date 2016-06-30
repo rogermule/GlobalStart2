@@ -44,7 +44,7 @@ public class SubMenu_Goal extends AppCompatActivity {
 
         String[] id = new String[]{"0","1","2","3","4","5"};
         String[] title = new String[]{"Know the Goal","Win","Sowing & Evangelism","Build","Send","Send Movements"};
-        String[] desc = new String[]{"goal","win","sow","build","send","movements"};
+        String[] desc = new String[]{"Jesus had three main aspects to His movement","Win people","How to do evangelism","Building & equipping people","Send people you won and built","Building spiritual movements"};
 
         ArrayList<SubMenuItem> menuItems = new ArrayList<SubMenuItem>();
 
