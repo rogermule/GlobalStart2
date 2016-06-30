@@ -17,11 +17,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1634b008-4bb4-4dda-ad72-c44f5b40d3ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_sowing.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_sowing2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/img_win2.JPG" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_win2.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_build.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_send.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Sowing_Evangelism.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Sowing_Evangelism.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Build.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Build.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Send.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Send.java" />
     </list>
     <ignored path="GlobalStart2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,14 +42,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GodHeart_Examples.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GodHeart_Examples.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/GodHeart/GodHeart_Examples.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4987775">
+            <state vertical-scroll-proportion="0.0">
               <caret line="47" column="53" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="53" />
               <folding>
                 <element signature="e#3370#3413#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Goal_Build.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Build.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4596577">
+              <caret line="61" column="55" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1803,9 +1813,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Share.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Build.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Movement.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Send.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Intro.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/details.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/GodHeart/GodHeart_Teenager.java" />
@@ -1821,6 +1829,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Know_Goal.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Win.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Sowing_Evangelism.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Build.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Send.java" />
       </list>
     </option>
   </component>
@@ -2367,20 +2377,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Model/News_Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31070495">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Model/News_Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Sync/ImageDownloader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2606,32 +2602,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Build.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-          <folding>
-            <element signature="e#4305#4348#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Movement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="80" column="9" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
           <folding>
             <element signature="e#4198#4241#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Send.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="9" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
-          <folding>
-            <element signature="e#3758#3801#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2690,11 +2666,6 @@
             <element signature="e#3126#3169#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/img_howtolearn2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Learn/Learn_Take_Action.java">
@@ -2807,11 +2778,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/GodHeart/GodHeart_Examples.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4987775">
+        <state vertical-scroll-proportion="0.0">
           <caret line="47" column="53" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="53" />
           <folding>
             <element signature="e#3370#3413#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/img_howtolearn.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/img_send.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/img_howtolearn2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29339853">
+          <caret line="55" column="63" selection-start-line="55" selection-start-column="63" selection-end-line="55" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gcme/globalstart/Goal/Goal_Build.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4596577">
+          <caret line="61" column="55" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
