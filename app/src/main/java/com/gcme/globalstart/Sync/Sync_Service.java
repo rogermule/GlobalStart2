@@ -49,7 +49,7 @@ public class Sync_Service extends Service {
         myContext = this;
         imageDownloader = new ImageDownloader(myContext,"");
         //new Make_Service().execute();
-        myFileManager = new FileManager();
+        myFileManager = new FileManager(this);
         //Log.i("Sync_Service", "Service Started");
         //Toast.makeText(this,"Sync Service Started:",Toast.LENGTH_LONG).show();
     }
@@ -99,20 +99,21 @@ public class Sync_Service extends Service {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-            Log.i("Sync_Service", "Sync Service Restarting...!");
-            ArrayList<News_Data> image_urls = myDatabase.getImagesURLs();
-            if(image_urls.size()>0){
-                File file = myFileManager.Create_ImageFile("Image"+image_urls.get(0).getNewsID()+".jpg");
-                Log.i("Sync_Service", "Image Destination :\n"+file.getAbsolutePath());
-                if(!file.isFile() || file.getTotalSpace()<1){
-                    if(!imageDownloader.isRunning()){
-                        imageDownloader = new ImageDownloader(myContext,image_urls.get(0).getImage());
-                        imageDownloader.setImageURL("Image"+image_urls.get(0).getNewsID()+".jpg",image_urls.get(0).getImage());
-                        imageDownloader.execute();
-                        Log.i("Sync_Service", "Downloading :\n"+image_urls.get(0).getImage());
-                    }
-                }
-            }
+//            Log.i("Sync_Service", "Sync Service Restarting...!");
+//            ArrayList<News_Data> image_urls = myDatabase.getImagesURLs();
+//            if(image_urls.size()>0){
+//
+//                File file = myFileManager.Create_ImageFile("Image"+image_urls.get(0).getNewsID()+".jpg");
+//                Log.i("Sync_Service", "Image Destination :\n"+file.getAbsolutePath());
+//                if(!file.isFile() || file.getTotalSpace()<1){
+//                    if(!imageDownloader.isRunning()){
+//                        imageDownloader = new ImageDownloader(myContext,image_urls.get(0).getImage());
+//                        imageDownloader.setImageURL("Image"+image_urls.get(0).getNewsID()+".jpg",image_urls.get(0).getImage());
+//                        imageDownloader.execute();
+//                        Log.i("Sync_Service", "Downloading :\n"+image_urls.get(0).getImage());
+//                    }
+//                }
+//            }
             new Make_Service().execute();
             Log.i("Sync_Service", "Sync Service Restarted!");
         }

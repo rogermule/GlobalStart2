@@ -18,12 +18,20 @@ public class MyDatabase {
     private SQL_Helper mySQL;
     private Context myContext;
 
+    public static final String Table_NewsFeed = "News_Feeds";
+    public static final String[] NewsFeed_FIELDS = { "News_ID", "Title", "Content", "Image_Url","Pub_Date" };
+    public static final String[] NewsFeed_Column = { "id","News_ID", "Title", "Content", "Image_Url","Pub_Date" };
+
+    public static final String Table_NewsFeed_Log = "News_Feeds_Log";
+    public static final String[] NewsFeedLog_FIELDS = { "News_ID", "NewsID" };
+    public static final String[] NewsFeedLog_Column = { "id","News_ID", "NewsID" };
+
     public MyDatabase(Context context){
         myContext = context;
         mySQL = new SQL_Helper(myContext);
         myDatabase = mySQL.getWritableDatabase();
-        mySQL.createTables(Global_Start.Table_NewsFeed, Global_Start.NewsFeed_FIELDS);
-        mySQL.createTables(Global_Start.Table_NewsFeed_Log, Global_Start.NewsFeedLog_FIELDS);
+        mySQL.createTables(Table_NewsFeed, NewsFeed_FIELDS);
+        mySQL.createTables(Table_NewsFeed_Log, NewsFeedLog_FIELDS);
     }
 
     public long insert(String DB_Table,ContentValues cv){
@@ -41,7 +49,7 @@ public class MyDatabase {
     }
     public long remove_news_log(String News_ID){
         String[] args = {""+News_ID};
-        long val = myDatabase.delete(Global_Start.Table_NewsFeed_Log, "News_ID = ?", args);
+        long val = myDatabase.delete(Table_NewsFeed_Log, "News_ID = ?", args);
         return val;
     }
     public long update(String DB_Table,ContentValues cv,int id){
@@ -54,8 +62,8 @@ public class MyDatabase {
         return c.getCount();
     }
     public ArrayList<News_Data> get_All_NewsFeed(String Category){
-        String DB_Table = Global_Start.Table_NewsFeed;
-        String[] Table_Fields = Global_Start.NewsFeed_Column;
+        String DB_Table = Table_NewsFeed;
+        String[] Table_Fields = NewsFeed_Column;
         ArrayList<News_Data> found = new ArrayList<News_Data>();
         Cursor c = myDatabase.query(DB_Table, Table_Fields, null, null, null, null, null);
         c.moveToFirst();
@@ -74,8 +82,8 @@ public class MyDatabase {
     }
     public ArrayList<News_Log> get_All_NewsFeedLog(){
         ArrayList<News_Log> found = new ArrayList<News_Log>();
-        String DB_Table = Global_Start.Table_NewsFeed_Log;
-        String[] Table_Fields = Global_Start.NewsFeedLog_FIELDS;
+        String DB_Table = Table_NewsFeed_Log;
+        String[] Table_Fields = NewsFeedLog_FIELDS;
         Cursor c = myDatabase.query(DB_Table, Table_Fields, null, null, null, null, null);
         c.moveToFirst();
         for(int i=0;i<c.getCount();i++){
@@ -88,8 +96,8 @@ public class MyDatabase {
     }
     public ArrayList<News_Data> get_All_News(){
         ArrayList<News_Data> found = new ArrayList<News_Data>();
-        String DB_Table = Global_Start.Table_NewsFeed;
-        String[] Table_Fields = Global_Start.NewsFeed_FIELDS;
+        String DB_Table = Table_NewsFeed;
+        String[] Table_Fields = NewsFeed_FIELDS;
         Cursor c = myDatabase.query(DB_Table, Table_Fields, null, null, null, null, null);
         c.moveToFirst();
         for(int i=0;i<c.getCount();i++){
@@ -106,8 +114,8 @@ public class MyDatabase {
     }
     public ArrayList<NewsFeed_Object> get_All_News_Object(){
         ArrayList<NewsFeed_Object> found = new ArrayList<NewsFeed_Object>();
-        String DB_Table = Global_Start.Table_NewsFeed;
-        String[] Table_Fields = Global_Start.NewsFeed_FIELDS;
+        String DB_Table = Table_NewsFeed;
+        String[] Table_Fields = NewsFeed_FIELDS;
         Cursor c = myDatabase.query(DB_Table, Table_Fields, null, null, null, null, null);
         c.moveToFirst();
         for(int i=0;i<c.getCount();i++){
@@ -124,8 +132,8 @@ public class MyDatabase {
     }
     public ArrayList<String> getImagesURL(){
         ArrayList<String> image_urls = new ArrayList<String>();
-        String DB_Table = Global_Start.Table_NewsFeed;
-        String[] Table_Fields = Global_Start.NewsFeed_FIELDS;
+        String DB_Table = Table_NewsFeed;
+        String[] Table_Fields = NewsFeed_FIELDS;
         Cursor c = myDatabase.query(DB_Table, Table_Fields, null, null, null, null, null);
         c.moveToFirst();
         for(int i=0;i<c.getCount();i++){
@@ -136,8 +144,8 @@ public class MyDatabase {
     }
     public ArrayList<News_Data> getImagesURLs(){
         ArrayList<News_Data> image_urls = new ArrayList<News_Data>();
-        String DB_Table = Global_Start.Table_NewsFeed;
-        String[] Table_Fields = Global_Start.NewsFeed_FIELDS;
+        String DB_Table = Table_NewsFeed;
+        String[] Table_Fields = NewsFeed_FIELDS;
         Cursor c = myDatabase.query(DB_Table, Table_Fields, null, null, null, null, null);
         c.moveToFirst();
         for(int i=0;i<c.getCount();i++){
@@ -151,10 +159,10 @@ public class MyDatabase {
     }
     private String[] getColumns(String DB_Table){
         String[] strs = null;
-        if(DB_Table == Global_Start.Table_NewsFeed){
-            strs = Global_Start.NewsFeed_Column;
-        }else if(DB_Table == Global_Start.Table_NewsFeed){
-            strs = Global_Start.NewsFeed_Column;
+        if(DB_Table == Table_NewsFeed){
+            strs = NewsFeed_Column;
+        }else if(DB_Table == Table_NewsFeed){
+            strs = NewsFeed_Column;
         }
         return strs;
     }
