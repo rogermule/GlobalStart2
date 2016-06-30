@@ -40,7 +40,7 @@
         jar="E:\VLM\GlobalStart2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="84fa607bb2369336d67e5914adcba7f7529a41a6">
+        sha1="ca2622a99a4dfa60cec1e922101e1e3448b25036">
         <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_ca2f4fd019db7bee09a6588a40a4dc3b37542f5b\classes.dex" />
     </item>
     <item
@@ -93,18 +93,18 @@
         <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_de195b7c147ff54508c924c392b369bf5a908383\classes.dex" />
     </item>
     <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="dd0e392bf6db061cb6a2cc0a3da419785d123e2d">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_eb37caaa8d97d03bc5d17aa02420fabdc7ce44fb\classes.dex" />
-    </item>
-    <item
         jar="C:\Users\Roger\AppData\Local\Android\sdk\build-tools\23.0.3\renderscript\lib\renderscript-v8.jar"
         jumboMode="true"
         revision="23.0.3"
         sha1="5b79706a834fa62fc97734d9e799e98b63536ff8">
         <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\renderscript-v8_38906d73624044a2f04d40e46af506b49f1e41b4\classes.dex" />
+    </item>
+    <item
+        jar="E:\VLM\GlobalStart2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bef46983ad9d3824e18c7af32e7d35a07a5d163f">
+        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_eb37caaa8d97d03bc5d17aa02420fabdc7ce44fb\classes.dex" />
     </item>
     <item
         jar="E:\VLM\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
