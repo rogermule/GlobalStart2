@@ -6,6 +6,15 @@ package com.gcme.globalstart.News_Feed;
 public class NewsFeed_Object {
     private String NewsID,Title,Content,Image,Pub_Date;
 
+    public NewsFeed_Object(){
+        this.Title = "";
+        this.Content = "";
+    }
+    public NewsFeed_Object(String newsID) {
+        NewsID = newsID;
+    }
+
+
     public String getTitle() {
         return Title;
     }

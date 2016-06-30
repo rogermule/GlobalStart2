@@ -300,6 +300,29 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Learn.SubMenu_Learn" />
         </activity>
+        <activity
+            android:name=".NewsFeed"
+            android:label="@string/app_name">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".News_Feed.NewsFeed_Detail"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/app_name">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NewsFeed" />
+        </activity>
     </application>
 
 </manifest>
