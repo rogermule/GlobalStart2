@@ -22,30 +22,19 @@ import java.util.ArrayList;
  */
 
 public class NewsFeed extends AppCompatActivity {
-    private static RecyclerView myRecyclerView;
-    private static RecyclerView.Adapter mAdapter;
+    private RecyclerView myRecyclerView;
+    private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private static MyDatabase myDatabase;
-    private static Context myContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.news_feed_page);
-        myDatabase = new MyDatabase(this);
         myRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         mLayoutManager = new LinearLayoutManager(this);
         myRecyclerView.setLayoutManager(mLayoutManager);
-        ArrayList<com.gcme.globalstart.News_Feed.NewsFeed> bb = new ArrayList<>();
-        bb.add(new com.gcme.globalstart.News_Feed.NewsFeed());
-        bb.add(new com.gcme.globalstart.News_Feed.NewsFeed());
-        bb.add(new com.gcme.globalstart.News_Feed.NewsFeed());
-        bb.add(new com.gcme.globalstart.News_Feed.NewsFeed());
-        Toast.makeText(this,"There are: "+bb.size(),Toast.LENGTH_LONG).show();
-
-        mAdapter = new NewsFeedAdapter(this,bb);
+        mAdapter = new NewsFeedAdapter(this,Global_Start.myDatabase.get_All_News());
         myRecyclerView.setAdapter(mAdapter);
-        myContext = this;
     }
 
     @Override

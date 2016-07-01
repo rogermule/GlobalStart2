@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.gcme.globalstart.Global_Start;
 import com.gcme.globalstart.R;
 
@@ -34,15 +36,15 @@ public class NewsFeedDetail extends AppCompatActivity {
         //collapsing toolbar
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.news_feed_detail_collapsing_toolbar);
         news_id = getIntent().getExtras().getString("news_id");
-       // newsFeed = Global_Start.myDatabase.get_NewsFeed_by_id(news_id);
+        newsFeed = Global_Start.myDatabase.get_NewsFeed_by_NewsID(news_id);
         collapsingToolbarLayout.setTitle("Deep Life NewsFeeds");
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
-        //Toast.makeText(this, "Image Path:\n" + news_id, Toast.LENGTH_LONG).show();
-     //   Glide.with(this).load(image_path).into(NewsImage);
+        Toast.makeText(this, "Image Path:\n" + news_id, Toast.LENGTH_LONG).show();
+        Glide.with(this).load(image_path).into(NewsImage);
         if(newsFeed != null){
             Title.setText(""+newsFeed.getTitle());
             Content.setText(""+newsFeed.getContent());
-            PubDate.setText(""+newsFeed.getPubDate());
+            PubDate.setText(""+newsFeed.getCreated());
         }
 
     }

@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.gcme.globalstart"
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -35,10 +35,18 @@ dependencies {
 
     compile 'com.google.code.gson:gson:2.3'
     compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'me.tatarka.support:jobscheduler:0.1.1'
     compile 'com.github.kittinunf.fuel:fuel-android:1.1.2'
     compile 'org.apache.httpcomponents:httpcore:4.4.1'
     compile 'org.apache.httpcomponents:httpclient:4.5'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.airk000:trigger:1.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.soundcloud.android:android-crop:1.0.1@aar'
+    compile 'org.json:json:20141113'
+
+    compile 'com.wdullaer:materialdatetimepicker:2.3.0'
 
     compile 'com.github.bluejamesbond:textjustify-android:2.1.6'
 }

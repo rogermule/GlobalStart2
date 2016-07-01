@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import com.gcme.globalstart.Global_Start;
 import com.gcme.globalstart.Model.News_Data;
 import com.gcme.globalstart.Model.News_Log;
+import com.gcme.globalstart.News_Feed.NewsFeed;
 import com.gcme.globalstart.News_Feed.NewsFeed_Object;
 
 import java.util.ArrayList;
@@ -19,8 +20,8 @@ public class MyDatabase {
     private Context myContext;
 
     public static final String Table_NewsFeed = "News_Feeds";
-    public static final String[] NewsFeed_FIELDS = { "News_ID", "Title", "Content", "Image_Url","Pub_Date" };
-    public static final String[] NewsFeed_Column = { "id","News_ID", "Title", "Content", "Image_Url","Pub_Date" };
+    public static final String[] NewsFeed_FIELDS = { "News_ID","Title", "Content", "Image_URL","Created" };
+    public static final String[] NewsFeed_Column = { "id","News_ID","Title", "Content", "Image_URL", "Created" };
 
     public static final String Table_NewsFeed_Log = "News_Feeds_Log";
     public static final String[] NewsFeedLog_FIELDS = { "News_ID", "NewsID" };
@@ -94,23 +95,41 @@ public class MyDatabase {
         }
         return found;
     }
-    public ArrayList<News_Data> get_All_News(){
-        ArrayList<News_Data> found = new ArrayList<News_Data>();
+
+    public ArrayList<NewsFeed> get_All_News(){
+        ArrayList<NewsFeed> found = new ArrayList<NewsFeed>();
         String DB_Table = Table_NewsFeed;
         String[] Table_Fields = NewsFeed_FIELDS;
         Cursor c = myDatabase.query(DB_Table, Table_Fields, null, null, null, null, null);
         c.moveToFirst();
         for(int i=0;i<c.getCount();i++){
             c.moveToPosition(i);
-            News_Data dis = new News_Data();
-            dis.setNewsID(Integer.valueOf(c.getString(c.getColumnIndex(Table_Fields[0]))));
-            dis.setTitle(c.getString(c.getColumnIndex(Table_Fields[1])));
-            dis.setContent(c.getString(c.getColumnIndex(Table_Fields[2])));
-            dis.setImage(c.getString(c.getColumnIndex(Table_Fields[3])));
-            dis.setPublished_date(c.getString(c.getColumnIndex(Table_Fields[4])));
+            NewsFeed dis = new NewsFeed();
+            dis.setNews_ID(c.getString(c.getColumnIndex(NewsFeed_FIELDS[0])));
+            dis.setTitle(c.getString(c.getColumnIndex(NewsFeed_FIELDS[1])));
+            dis.setContent(c.getString(c.getColumnIndex(NewsFeed_FIELDS[2])));
+            dis.setImageURL(c.getString(c.getColumnIndex(NewsFeed_FIELDS[3])));
             found.add(dis);
         }
         return found;
+    }
+    public NewsFeed get_NewsFeed_by_NewsID(String news_id){
+        String DB_Table = Table_NewsFeed;
+        String[] Table_Fields = NewsFeed_FIELDS;
+        Cursor c = myDatabase.query(DB_Table, Table_Fields, null, null, null, null, null);
+        c.moveToFirst();
+        for(int i=0;i<c.getCount();i++){
+            c.moveToPosition(i);
+            NewsFeed dis = new NewsFeed();
+            dis.setNews_ID(c.getString(c.getColumnIndex(NewsFeed_FIELDS[0])));
+            dis.setTitle(c.getString(c.getColumnIndex(NewsFeed_FIELDS[1])));
+            dis.setContent(c.getString(c.getColumnIndex(NewsFeed_FIELDS[2])));
+            dis.setImageURL(c.getString(c.getColumnIndex(NewsFeed_FIELDS[3])));
+            if(dis.getNews_ID().equals(news_id)){
+                return dis;
+            }
+        }
+        return null;
     }
     public ArrayList<NewsFeed_Object> get_All_News_Object(){
         ArrayList<NewsFeed_Object> found = new ArrayList<NewsFeed_Object>();

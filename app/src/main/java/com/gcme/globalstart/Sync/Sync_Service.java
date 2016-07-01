@@ -81,7 +81,6 @@ public class Sync_Service extends Service {
                 //JSONObject myObject = myParser.makeHttpRequest(	"http://192.168.0.41/SyncSMS/public/api", "POST", init());
                 JSONObject myObject = myParser.makeHttpRequest(	"http://192.168.0.18/SyncSMS/public/api", "POST", init());
                 Log.i("Sync_Service", "Server Response: \n" + myObject.toString());
-                Global_Start.addNew_NewsFeed(myObject.getJSONArray("NewsFeeds"));
                 Log.i("Sync_Service", "Adding NewsFeed:\n"+myObject.getJSONArray("NewsFeeds"));
                 Log.i("Sync_Service", "Sync Service Slept!");
                 Thread.sleep(5000);

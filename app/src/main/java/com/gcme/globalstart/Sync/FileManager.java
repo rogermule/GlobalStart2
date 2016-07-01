@@ -19,13 +19,13 @@ public class FileManager {
     public FileManager(Context context){
         myContext = context;
         if(isExternalStorageWritable()){
-            myFile = new File(Environment.getExternalStorageDirectory(), "DeepLife");
+            myFile = new File(Environment.getExternalStorageDirectory(), "GlobalStart");
             if(!myFile.isDirectory()){
                 myFile.mkdir();
             }
         }
         else{
-            myFile = new File(context.getFilesDir().getPath(), "DeepLife");
+            myFile = new File(context.getFilesDir().getPath(), "GlobalStart");
             if(!myFile.isDirectory()){
                 myFile.mkdir();
             }

@@ -14,6 +14,7 @@ import com.gcme.globalstart.GodHeart.SubMenu_GodHeart;
 import com.gcme.globalstart.Learn.SubMenu_Learn;
 import com.gcme.globalstart.Menu_Options.ContactUsOptions;
 import com.gcme.globalstart.Menu_Options.MoreOptions;
+import com.gcme.globalstart.Menu_Options.SendTestimony;
 import com.goka.blurredgridmenu.GridMenu;
 import com.goka.blurredgridmenu.GridMenuFragment;
 
@@ -138,6 +139,14 @@ public class MainActivity  extends AppCompatActivity {
 //            intent.putExtras(b);
 
             startActivity(intent);
+        }
+        else if(position==6){
+            SendTestimony more = new SendTestimony();
+            Bundle b = new Bundle();
+            b.putString("Title","Contact Us");
+            b.putString("Detail", "This App is a global start application which aims to bring about a chhnage in the way the society acts and walks in his way which Christ. \n");
+            more.setArguments(b);
+            more.show(getFragmentManager(),"Contact us");
         }
         else if(position==7){
             MoreOptions more = new MoreOptions();

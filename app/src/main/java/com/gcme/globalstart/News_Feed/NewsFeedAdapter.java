@@ -2,6 +2,7 @@ package com.gcme.globalstart.News_Feed;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -10,8 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
+import com.bumptech.glide.Glide;
 import com.gcme.globalstart.R;
 import com.gcme.globalstart.Sync.FileManager;
 
@@ -80,8 +83,8 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.DataOb
         holder.Title.setText((NewsFeeds.get(position).getTitle()));
         holder.Content.setText(NewsFeeds.get(position).getContent());
         //File imageFile = myFileManager.getFileAt("images", NewsFeeds.get(position).getImagePath());
-        File imageFile = myFileManager.getFileAt("images", NewsFeeds.get(position).getImagePath());
-        Log.i("Deep Life", imageFile.getAbsolutePath());
+        File imageFile = myFileManager.getFileAt("images", "News"+NewsFeeds.get(position).getNews_ID()+".png");
+        Log.i("Global Start:->", imageFile.getAbsolutePath());
         //Toast.makeText(myContext,"Image Path: "+String.valueOf(imageFile.isFile()),Toast.LENGTH_LONG).show();
 
         FileInputStream stream = null;
@@ -90,7 +93,7 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.DataOb
         }catch (Exception e){
         }
         //holder.NewsImage.setImageBitmap(BitmapFactory.decodeStream(stream));
-     //   Glide.with(myContext).load(imageFile.getAbsolutePath()).into(holder.NewsImage);
+        Glide.with(myContext).load(imageFile.getAbsolutePath()).into(holder.NewsImage);
         holder.image_path = imageFile.getAbsolutePath();
         holder.news_id = NewsFeeds.get(position).getId();
     }
