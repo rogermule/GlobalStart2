@@ -32,6 +32,7 @@ public class Intro extends AppCompatActivity {
         tv_title = (TextView) findViewById(R.id.txt_news_detail_title);
         tv_content = (TextView) findViewById(R.id.txt_news_detail_content);
 
+
         title = "Intro ";
         content = "Can you imagine a day when the teenagers of your country would have the opportunity to ... " +
                 "\n  => Hear the gospel" +
