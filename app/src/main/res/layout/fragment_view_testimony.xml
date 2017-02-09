@@ -32,7 +32,7 @@
                     style="@style/Widget.CardContent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorBlue"
+                    android:background="@color/colorPrimary"
                     >
 
                     <TextView
@@ -40,8 +40,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="#fff"
-                        android:textSize="20dp"
-                        android:text="Send Your Testimony"
+                        android:textSize="19dp"
+                        android:text="Send Us Your Testimony"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:text="Make it short and clear"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 </LinearLayout>
@@ -79,6 +87,8 @@
                         android:id="@+id/testimony_send"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/colorLightWhite"
                         android:text="Send"/>
 
                 </LinearLayout>

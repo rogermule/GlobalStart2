@@ -4,7 +4,6 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
@@ -46,8 +45,6 @@ public class SendTestimony extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        String txtTitle = getArguments().getString("Title");
-        String txtMore = getArguments().getString("Detail");
         View view = inflater.inflate(R.layout.fragment_view_testimony,null);
         myProgressDialog = new ProgressDialog(getActivity());
 
@@ -94,13 +91,13 @@ public class SendTestimony extends DialogFragment {
             }
         });
 
-        builder.setView(view)
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        builder.setView(view);
+      /*          .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         SendTestimony.this.getDialog().cancel();
                     }
-                });
+                });*/
         return builder.create();
     }
 }

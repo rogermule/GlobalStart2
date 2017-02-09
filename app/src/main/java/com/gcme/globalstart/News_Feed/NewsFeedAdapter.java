@@ -2,7 +2,6 @@ package com.gcme.globalstart.News_Feed;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -11,8 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 
 import com.bumptech.glide.Glide;
 import com.gcme.globalstart.R;
@@ -41,14 +38,15 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.DataOb
     }
 
     public static class DataObjectHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
-        TextView Title,Content;
+        TextView Title,Content,pub_date;
         ImageView NewsImage;
-        String news_id,image_path;
+        String news_id,image_path,news_content,news_pub_date,news_title;
 
         public DataObjectHolder(View itemView) {
             super(itemView);
             Title = (TextView) itemView.findViewById(R.id.news_feed_title);
             Content = (TextView) itemView.findViewById(R.id.news_feed_content);
+            pub_date = (TextView) itemView.findViewById(R.id.news_pubdate);
             NewsImage = (ImageView) itemView.findViewById(R.id.news_feed_image);
             news_id = "0";
             itemView.setOnClickListener(this);
@@ -61,6 +59,9 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.DataOb
             Bundle b = new Bundle();
             b.putString("news_id",news_id);
             b.putString("news_image_path",image_path);
+            b.putString("news_content",news_content);
+            b.putString("news_pub_date",news_pub_date);
+            b.putString("news_title",news_title);
             intent.putExtras(b);
             myContext.startActivity(intent);
         }
@@ -82,6 +83,7 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.DataOb
     public void onBindViewHolder(DataObjectHolder holder, int position) {
         holder.Title.setText((NewsFeeds.get(position).getTitle()));
         holder.Content.setText(NewsFeeds.get(position).getContent());
+        holder.pub_date.setText(NewsFeeds.get(position).getCreated());
         //File imageFile = myFileManager.getFileAt("images", NewsFeeds.get(position).getImagePath());
         File imageFile = myFileManager.getFileAt("images", "News"+NewsFeeds.get(position).getNews_ID()+".png");
         Log.i("Global Start:->", imageFile.getAbsolutePath());
@@ -95,7 +97,11 @@ public class NewsFeedAdapter extends RecyclerView.Adapter<NewsFeedAdapter.DataOb
         //holder.NewsImage.setImageBitmap(BitmapFactory.decodeStream(stream));
         Glide.with(myContext).load(imageFile.getAbsolutePath()).into(holder.NewsImage);
         holder.image_path = imageFile.getAbsolutePath();
+        holder.news_content = NewsFeeds.get(position).getContent();
+        holder.news_pub_date = NewsFeeds.get(position).getCreated();
         holder.news_id = NewsFeeds.get(position).getId();
+        holder.news_title = NewsFeeds.get(position).getTitle();
+
     }
 
     @Override

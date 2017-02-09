@@ -1,128 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<items version="2" />
-=======
 <items version="2" >
 
     <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.github.kittinunf.fuel\fuel-android\1.1.2\jars\classes.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_bba09d06f5cea1e149f181b3266e8ac707e6eed2\classes.dex" />
+        sha1="c769121990f3c66893d6d60d2e3cb5a556bfb69c">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.kittinunf.fuel-fuel-android-1.1.2_45bf47b529acba412ba8df2b3cfdc78d85548922\classes.dex" />
     </item>
     <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\exploded-aar\com.github.bluejamesbond\textjustify-android\2.1.6\jars\classes.jar"
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.github.airk000\trigger\1.0.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="a298f4b67b4898200c47cfd4f5bf2f221c657766">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.bluejamesbond-textjustify-android-2.1.6_3a67541f5bf9562cb1880ef2b606c0796cc52ed6\classes.dex" />
+        sha1="76895f2a615bef2015e1b57a71efdd62b518da59">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.airk000-trigger-1.0.0_76b7394a8de2714ffcab60e8786738c937a0e21b\classes.dex" />
+    </item>
+    <item
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.github.goka.blurredgridmenu\blurredgridmenu\1.0.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6e59c91d161833c09fd1752fd8ba1162afdf7cc5">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.goka.blurredgridmenu-blurredgridmenu-1.0.2_e24ad4344777a5a0ba3952b0dafa594cdf64d168\classes.dex" />
+    </item>
+    <item
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_547891cbbecd90135963a990f89c86b644be32aa\classes.dex" />
+    </item>
+    <item
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.soundcloud.android\android-crop\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="11a65cf2b30c192b38a881d626fa771a78a2293d">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.soundcloud.android-android-crop-1.0.1_0eba697438110e1738bc4cbb3e9c74dc33767bb5\classes.dex" />
+    </item>
+    <item
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_1e6b88392eda84a98675f45a1434cf482c16ee81\classes.dex" />
     </item>
     <item
         jar="C:\Users\Roger\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
         jumboMode="true"
         revision="23.0.3"
         sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_10906ae5d00070842b211b0f99087183b7648a62\classes.dex" />
-    </item>
-    <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_0fa2f8575e1bfc1b39a1741bf1dc92994e943ba9\classes.dex" />
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_10906ae5d00070842b211b0f99087183b7648a62\classes.dex" />
     </item>
     <item
         jar="C:\Users\Roger\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.1\f5aa318bda4c6c8d688c9d00b90681dcd82ce636\httpcore-4.4.1.jar"
         jumboMode="true"
         revision="23.0.3"
         sha1="f5aa318bda4c6c8d688c9d00b90681dcd82ce636">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\httpcore-4.4.1_f543608b889041cc64db35a0c4d6d96955b36266\classes.dex" />
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\httpcore-4.4.1_f543608b889041cc64db35a0c4d6d96955b36266\classes.dex" />
     </item>
     <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="ca2622a99a4dfa60cec1e922101e1e3448b25036">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_ca2f4fd019db7bee09a6588a40a4dc3b37542f5b\classes.dex" />
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_e33bdcc5f0546f377cd1dc1e3fcbaa0d944fbfee\classes.dex" />
     </item>
     <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\exploded-aar\com.github.goka.blurredgridmenu\blurredgridmenu\1.0.2\jars\classes.jar"
+        jar="C:\Users\Roger\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.0.1\68cddd9aec83d23f789f72bfdc933db245c4a635\kotlin-stdlib-1.0.1.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="6e59c91d161833c09fd1752fd8ba1162afdf7cc5">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.goka.blurredgridmenu-blurredgridmenu-1.0.2_aa1d47e791750f854a6a4b151e4eaa7f8ac4c6b4\classes.dex" />
+        sha1="68cddd9aec83d23f789f72bfdc933db245c4a635">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\kotlin-stdlib-1.0.1_292275e379a1fdddc9531e0ce3234572215a625d\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Roger\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3\5fc52c41ef0239d1093a1eb7c3697036183677ce\gson-2.3.jar"
+        jar="C:\Users\Roger\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.3_36db3a5f8afb74a4ec0c1d9667f70c9bac831a51\classes.dex" />
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.3.1_d03f5bcb749d479d039510f76e9f57099d0eb413\classes.dex" />
     </item>
     <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_4d48b6ba2f9bc2a15a080ac580589032a43bf224\classes.dex" />
+        sha1="15b759a6c9541322d2b5b63a8dd81308cb16a726">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_c47e1cc075e36f412b85ff5bd4dc1ff956df42f6\classes.dex" />
+    </item>
+    <item
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_0664dc8da70980f1fabdd24fdd5cafe94f5b0d37\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roger\.gradle\caches\modules-2\files-2.1\com.github.kittinunf.fuel\fuel\1.1.2\f6398b14fc327faa11a3c61930503e019c7a418d\fuel-1.1.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f6398b14fc327faa11a3c61930503e019c7a418d">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\fuel-1.1.2_811695523e1965625466d238d72f0761f7b7cacd\classes.dex" />
+    </item>
+    <item
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_3b5be07a254b9983418cf00c83b156cab58d26b3\classes.dex" />
     </item>
     <item
         jar="C:\Users\Roger\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
         jumboMode="true"
         revision="23.0.3"
         sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_f71d4463def5ca33adfc3826015518692ae40429\classes.dex" />
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_f71d4463def5ca33adfc3826015518692ae40429\classes.dex" />
     </item>
     <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_b4221bd34f8e0e66cb50739e94b365d909a6e0d7\classes.dex" />
+        sha1="48858eae4e075e0801c155ee2b2b5136fb040d55">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_ce4547d7789011817c72c55cdff50e35030cadbf\classes.dex" />
     </item>
     <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_0e14d2a90cfbc7b276383b095679968646274775\classes.dex" />
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_d659a04056e07afdfebcb4efecda5e36a1c84016\classes.dex" />
     </item>
     <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jar="C:\Users\Roger\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-runtime\1.0.1\124852ea8cdd3d89827923b5e79627e8a7c314b2\kotlin-runtime-1.0.1.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_de195b7c147ff54508c924c392b369bf5a908383\classes.dex" />
+        sha1="124852ea8cdd3d89827923b5e79627e8a7c314b2">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\kotlin-runtime-1.0.1_44380c4a689713d495affecebd9405d2f41fb349\classes.dex" />
+    </item>
+    <item
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_c15ea3ff7494be778d47282ed2f0656243aa5b3a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roger\.gradle\caches\modules-2\files-2.1\com.github.kittinunf.result\result\1.0.1\3232fdf0a5501dbacf605a372607801bc4e10c82\result-1.0.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3232fdf0a5501dbacf605a372607801bc4e10c82">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\result-1.0.1_c41689e688d2c4898b4a870dc4a443fc999c8285\classes.dex" />
     </item>
     <item
         jar="C:\Users\Roger\AppData\Local\Android\sdk\build-tools\23.0.3\renderscript\lib\renderscript-v8.jar"
         jumboMode="true"
         revision="23.0.3"
         sha1="5b79706a834fa62fc97734d9e799e98b63536ff8">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\renderscript-v8_38906d73624044a2f04d40e46af506b49f1e41b4\classes.dex" />
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\renderscript-v8_38906d73624044a2f04d40e46af506b49f1e41b4\classes.dex" />
     </item>
     <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.github.bluejamesbond\textjustify-android\2.1.6\jars\classes.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="bef46983ad9d3824e18c7af32e7d35a07a5d163f">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_eb37caaa8d97d03bc5d17aa02420fabdc7ce44fb\classes.dex" />
+        sha1="a298f4b67b4898200c47cfd4f5bf2f221c657766">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.bluejamesbond-textjustify-android-2.1.6_77e86dd80d1670c765607f41ec6b17be06ff2d47\classes.dex" />
     </item>
     <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\me.tatarka.support\jobscheduler\0.1.1\jars\classes.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_2a001793069f699280d0b9edf260916b6fd2c9a7\classes.dex" />
+        sha1="8d5fa4ca32cbbd491d4e027d16f02e897dfed0f2">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\me.tatarka.support-jobscheduler-0.1.1_61ce1b26380786066282c1a4778b0e726ee1d3e6\classes.dex" />
     </item>
     <item
-        jar="E:\VLM\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.wdullaer\materialdatetimepicker\2.3.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="E:\VLM\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_8f298e107298dd199beae2768ac836f19d806625\classes.dex" />
+        sha1="a95fd025efad7b05be3d29737bec37652e0fdb9e">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.wdullaer-materialdatetimepicker-2.3.0_66c42e69f6f6827c4c2f7ced10dad755f5a14c82\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roger\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_c21b8090090b7a912822bed3e4a97473233827ca\classes.dex" />
+    </item>
+    <item
+        jar="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="E:\Sample\GlobalStart2\GlobalStart2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_8aeb8c29e4a44c03adca6ecd8f8ccd3f3ed4242a\classes.dex" />
     </item>
 
 </items>
->>>>>>> dd0e0cfd1a5b0b26fd492b7dc5da5343e42085e3

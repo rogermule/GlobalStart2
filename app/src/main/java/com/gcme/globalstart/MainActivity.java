@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Toast;
 
 import com.gcme.globalstart.Do.SubMenu_Do;
 import com.gcme.globalstart.Goal.SubMenu_Goal;
@@ -36,7 +35,7 @@ public class MainActivity  extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        mGridMenuFragment = GridMenuFragment.newInstance(R.drawable.global_start);
+        mGridMenuFragment = GridMenuFragment.newInstance(R.drawable.back);
 
 //        findViewById(R.id.show_menu_button).setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -68,7 +67,6 @@ public class MainActivity  extends AppCompatActivity {
 
     public void chooseSubMenu(int position){
         if(position == 0){
-            Toast.makeText(this,"NewsFeed",Toast.LENGTH_LONG).show();
             Intent intent = new Intent(MainActivity.this,NewsFeed.class);
             startActivity(intent);
         }else  if(position == 1){
@@ -77,49 +75,15 @@ public class MainActivity  extends AppCompatActivity {
         }
         else if(position == 2){
             Intent intent = new Intent(MainActivity.this, SubMenu_GodHeart.class);
-
-//            String[] ids = new String[]{"1","2","3"};
-//            String[] titles = new String[]{"Teenagers","Biblical Examples","Take Action"};
-//            String[] desc = new String[]{"teenagers","examples","action"};
-//
-//            Bundle b = new Bundle();
-//            b.putStringArray("ids",ids);
-//            b.putStringArray("titles",titles);
-//            b.putStringArray("descs",desc);
-//
-//            intent.putExtras(b);
-
             startActivity(intent);
         }
         else if(position == 3){
             Intent intent = new Intent(MainActivity.this, SubMenu_Learn.class);
 
-//            String[] ids = new String[]{"1","2","3","4"};
-//            String[] titles = new String[]{"Understand The Youth","Jesus's Model","How to Learn","Take Action"};
-//            String[] desc = new String[]{"youth","model","learn","action time"};
-//
-//            Bundle b = new Bundle();
-//            b.putStringArray("ids",ids);
-//            b.putStringArray("titles",titles);
-//            b.putStringArray("descs",desc);
-//
-//            intent.putExtras(b);
-
             startActivity(intent);
         }
         else if(position == 4){
             Intent intent = new Intent(MainActivity.this, SubMenu_Do.class);
-
-//            String[] ids = new String[]{"1","2","3"};
-//            String[] titles = new String[]{"Prayer","Find Others to Help","Take Action"};
-//            String[] desc = new String[]{"pray","help","Action time"};
-//
-//            Bundle b = new Bundle();
-//            b.putStringArray("ids",ids);
-//            b.putStringArray("titles",titles);
-//            b.putStringArray("descs",desc);
-//
-//            intent.putExtras(b);
 
             startActivity(intent);
         }
@@ -127,24 +91,13 @@ public class MainActivity  extends AppCompatActivity {
         else if(position == 5){
             Intent intent = new Intent(MainActivity.this, SubMenu_Goal.class);
 
-//            String[] ids = new String[]{"1","2","3","4","5","6"};
-//            String[] titles = new String[]{"Know the Goal","Win","Sowing & Evangelism","Build","Send","Send Movements"};
-//            String[] desc = new String[]{"goal","win","sow","build","send","movements"};
-//
-//            Bundle b = new Bundle();
-//            b.putStringArray("ids",ids);
-//            b.putStringArray("titles",titles);
-//            b.putStringArray("descs",desc);
-//
-//            intent.putExtras(b);
-
             startActivity(intent);
         }
         else if(position==6){
             SendTestimony more = new SendTestimony();
             Bundle b = new Bundle();
             b.putString("Title","Contact Us");
-            b.putString("Detail", "This App is a global start application which aims to bring about a chhnage in the way the society acts and walks in his way which Christ. \n");
+            b.putString("Detail", "This App is a global start application which aims to bring about a change in the way the society acts and walks in his way which Christ. \n");
             more.setArguments(b);
             more.show(getFragmentManager(),"Contact us");
         }

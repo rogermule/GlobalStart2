@@ -9,7 +9,6 @@ import android.telephony.TelephonyManager;
 import com.gcme.globalstart.Database.MyDatabase;
 import com.gcme.globalstart.Sync.FileManager;
 import com.gcme.globalstart.Sync.SyncService;
-import com.gcme.globalstart.Sync.Sync_Service;
 import com.goka.blurredgridmenu.BlurredGridMenuConfig;
 
 import me.tatarka.support.job.JobInfo;
@@ -22,7 +21,7 @@ public class Global_Start extends Application {
 
     public static MyDatabase myDatabase;
     public static int DOWNLOAD_STATUS;
-    public static String API_URL = "http://192.168.43.156/GlobalStart/Public/MobAPI.php";
+    public static String API_URL = "http://192.168.173.1/GlobalStart/Public/MobAPI.php";
     public static FileManager myFileManager;
     private JobScheduler myJobScheduler;
     public static TelephonyManager Tel;
@@ -42,7 +41,8 @@ public class Global_Start extends Application {
                 .build(new BlurredGridMenuConfig.Builder()
                         .radius(1)
                         .downsample(1)
-                        .overlayColor(Color.parseColor("#AA000000")));
+//                        .overlayColor(Color.parseColor("#AA000000")));
+                        .overlayColor(Color.parseColor("#4888c6")));
         JobConstr();
     }
     public void JobConstr(){

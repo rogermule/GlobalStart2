@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.gcme.globalstart.Global_Start;
@@ -28,24 +27,35 @@ public class NewsFeedDetail extends AppCompatActivity {
         setContentView(R.layout.news_feed_detail);
         setSupportActionBar((Toolbar) findViewById(R.id.news_feed_detail_toolbar));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         String image_path = getIntent().getExtras().getString("news_image_path");
+        String news_content = getIntent().getExtras().getString("news_content");
+        String pub_date = getIntent().getExtras().getString("news_pub_date");
+        String news_title = getIntent().getExtras().getString("news_title");
+
         NewsImage = (ImageView) findViewById(R.id.news_feed_detail_image);
         Title = (TextView) findViewById(R.id.news_feed_detail_title);
         Content = (TextView) findViewById(R.id.news_feed_detail_content);
         PubDate = (TextView) findViewById(R.id.news_feed_detail_date);
+
         //collapsing toolbar
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.news_feed_detail_collapsing_toolbar);
         news_id = getIntent().getExtras().getString("news_id");
         newsFeed = Global_Start.myDatabase.get_NewsFeed_by_NewsID(news_id);
-        collapsingToolbarLayout.setTitle("Deep Life NewsFeeds");
+        collapsingToolbarLayout.setTitle(news_title);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
-        Toast.makeText(this, "Image Path:\n" + news_id, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "Image Path:\n" + news_id, Toast.LENGTH_LONG).show();
+
         Glide.with(this).load(image_path).into(NewsImage);
-        if(newsFeed != null){
-            Title.setText(""+newsFeed.getTitle());
-            Content.setText(""+newsFeed.getContent());
-            PubDate.setText(""+newsFeed.getCreated());
-        }
+//        if(newsFeed != null){
+//            Title.setText(""+newsFeed.getTitle());
+//            Content.setText(""+newsFeed.getContent());
+//            PubDate.setText(""+newsFeed.getCreated());
+//        }
+
+        Title.setText(news_title);
+        Content.setText(news_content);
+        PubDate.setText(pub_date);
 
     }
 }
